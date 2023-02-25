@@ -1,0 +1,602 @@
+/* 
+*  CSS TABLE OF CONTENTS
+*   
+*  1.0 - Reset
+*  2.0 - Common
+*  4.0 - Header
+*  4.0 - Menu
+*  5.0 - Main
+*  6.0 - Achievements
+*  7.0 - Projects
+*  8.0 - Cta
+*  9.0 - Services
+*  10.0 - Gallery
+*  11.0 - Faq
+*  12.0 - Partners
+*  13.0 - Reviews
+*  14.0 - Contacts
+*  15.0 - Footer
+*/
+
+/*** 1.0 - Reset ***/
+
+/* Normalize.css */
+
+/*** 2.0 - Common ***/
+
+/* Global */
+
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*** Utility ***/
+
+/* Tiles */
+
+.title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  color: #404149;
+  margin: 0 0 60px 0;
+}
+
+@media only screen and (max-width: 550px) {
+  .title {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+/* Text */
+
+.text-white {
+  color: #fff;
+}
+
+.text-primary {
+  color: #f7654a;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.text-nodecor {
+  text-decoration: none;
+}
+
+/* Layout */
+
+.container {
+  max-width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Flex */
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+/* Buttons */
+
+.btn {
+  padding: 15px 30px;
+  border: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  background: #ffffff;
+}
+
+.btn:hover {
+  background: #edeaea;
+}
+
+.btn i {
+  margin-right: 15px;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+}
+
+/*** 3.0 - Header ***/
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*** 4.0 - Menu ***/
+
+/* Menu */
+
+.menu {
+  position: relative;
+  padding: 20px 0;
+}
+
+/* Btn */
+
+.menu-btn {
+  background: #f7654a;
+  height: 50px;
+  width: 50px;
+  border: 0;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.menu-btn.close {
+  display: none;
+}
+
+/* Nav */
+
+.menu-nav {
+  display: none;
+  position: absolute;
+  right: 0;
+}
+
+.menu-nav ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.menu-nav a {
+  padding: 15px 25px;
+  display: block;
+  background: #ffffff;
+  border-bottom: 1px solid #f7654a;
+  line-height: 22px;
+  color: #404149;
+  white-space: nowrap;
+}
+
+.menu-nav a:hover {
+  background: #f7654a;
+  color: #ffffff;
+}
+
+.menu-nav ul li:last-child a {
+  border: none;
+}
+
+/* Menu :target */
+
+#menu:target .menu-nav {
+  display: flex;
+}
+
+#menu:target .menu-btn.close {
+  display: flex;
+}
+
+#menu:target .menu-btn.open {
+  display: none;
+}
+
+/*** 5.0 - Main ***/
+
+.main {
+  background-image: url("bg.jpg");
+  height: 740px;
+}
+
+.main-title {
+  margin: 0;
+  padding-top: 130px;
+  margin-bottom: 35px;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 95px;
+  letter-spacing: 0.02em;
+}
+
+.main-text {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+@media only screen and (max-width: 900px) {
+  .main-title {
+    padding-top: 100px;
+    margin-bottom: 30px;
+    font-size: 44px;
+    line-height: 75px;
+  }
+
+  .main-text {
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .main {
+    height: 550px;
+  }
+
+  .main-title {
+    padding-top: 70px;
+    margin-bottom: 20px;
+    font-size: 26px;
+    line-height: 35px;
+  }
+
+  .main-text {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+  }
+}
+
+/*** 6.0 - Achievements ***/
+
+.achievements-item {
+  width: 140px;
+}
+
+.achievements .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  gap: 30px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: #f7f7f7;
+  margin-top: -150px;
+}
+
+.achievements-number {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 107px;
+  margin: 0;
+}
+
+.achievements-unit {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  margin: 0;
+}
+
+.achievements-desc {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #999999;
+  margin: 0;
+}
+
+/*** 7.0 - Projects ***/
+
+.projects {
+  padding: 100px 0;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projects-item {
+  width: 33%;
+  padding: 15px;
+}
+
+.projects-item img {
+  margin-bottom: 45px;
+}
+
+.projects-item-line {
+  width: 55px;
+  height: 6px;
+  background: #f7654a;
+  margin-bottom: 15px;
+}
+
+.projects-item h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #404149;
+  margin: 0 0 20px 0;
+}
+
+.projects-item p {
+  line-height: 22px;
+  color: #999999;
+}
+
+@media only screen and (max-width: 700px) {
+  .projects-item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .projects-item {
+    width: 100%;
+  }
+}
+
+/*** 8.0 - Cta ***/
+
+.cta {
+  background: #f7654a;
+  padding: 45px 0;
+}
+
+.cta-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 71px;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+.cta-text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .cta-title {
+    font-size: 38px;
+    line-height: 47px;
+  }
+
+  .cta-text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .cta .container {
+    flex-wrap: wrap;
+  }
+  .cta .btn {
+    margin-top: 20px;
+  }
+}
+
+/*** 9.0 - Services ***/
+
+.services {
+  padding: 150px 0;
+}
+
+.services-list {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: auto auto auto;
+}
+
+.services-item {
+  background: #f7f7f7;
+  padding: 60px;
+}
+
+.services-item i {
+  font-size: 48px;
+  line-height: 40px;
+  text-align: center;
+  color: #f7654a;
+  margin-bottom: 30px;
+}
+
+.services-item h3 {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+}
+
+@media only screen and (max-width: 950px) {
+  .services-list {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .services-list {
+    grid-template-columns: auto;
+  }
+}
+
+/*** 10.0 - Gallery ***/
+
+.gallery {
+  font-size: 0;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+/*** 11.0 - Faq ***/
+
+.faq {
+  padding: 150px 0;
+}
+
+.faq-accordeon-item {
+  margin-bottom: 40px;
+}
+
+.faq-accordeon-item summary {
+  color: #f7654a;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  cursor: pointer;
+}
+.faq-accordeon-item p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #999999;
+  max-width: 730px;
+  margin-top: 30px;
+}
+
+/*** 12.0 - Partners ***/
+
+.partners {
+  background: #404149;
+  padding: 100px 0;
+}
+
+.partners-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 64px;
+}
+
+/*** 13.0 - Reviews ***/
+
+.reviews {
+  padding: 150px 0;
+}
+
+.reviews-list {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 30px;
+}
+
+.reviw-item-content {
+  background: #f7f7f7;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.reviw-item-content p {
+  font-size: 14px;
+  line-height: 21px;
+  color: #999999;
+}
+
+.reviw-item-quote {
+  margin-bottom: 30px;
+}
+
+.reivew-item-title {
+  font-size: 21px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+}
+
+.reivew-item-title a {
+  color: #f7654a;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .reviews-list {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .reviews-list {
+    grid-template-columns: repeat(1, auto);
+  }
+}
+
+/*** 14.0 - Contacts ***/
+
+.contacts {
+  padding: 100px 0;
+}
+
+.contacts-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.contacts-item-icon {
+  font-size: 48px;
+  line-height: 40px;
+  color: #f7654a;
+  margin-bottom: 20px;
+}
+
+.contacts-item-label {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #999999;
+  margin-bottom: 25px;
+}
+
+.contacts-item-info a {
+  color: #f7654a;
+  text-decoration: none;
+}
+
+.contacts-item-info {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  max-width: 255px;
+}
+
+.contacts-item-info p {
+  margin: 0;
+}
+
+/*** 15.0 - Footer ***/
+
+.footer {
+  padding: 30px 0;
+  background: #404149;
+  font-weight: 300;
+}
